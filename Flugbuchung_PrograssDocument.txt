@@ -1,0 +1,51 @@
+Webdev - Flugbuchung
+
+##Start
+	Maven projekt
+	Spring Starter Rest -> Build with maven -> in die pom einfügen
+
+	Application Klasse erstellen -> @SpringBootApplication + main-Methode mit SpringApplication.run(Application.class)
+	
+##Rest
+	Services: FlugService -> @RestController. Die Methoden mit @RequestMapping annotieren
+
+	
+##Datenbank Zugriff: Zugriff auf H2 mit Spring Data JPA (ORM)
+Datenbank: h2
+Spring Starter Data JPA
+=> beides in maven
+
+Airport Klasse erstellen und mit @Entity. Zusätzlich den Primärtschlüssel mit @Id und @GeneratedValue annotieren, damit die Tabelle in der Datenbank erzeugt werden kann
+	JPA braucht einen leeren Konstruktur
+
+##application.properties
+	# JDBC h2
+	spring.datasource.dbcp2.driver-class-name=org.h2.Driver
+	spring.datasource.url=jdbc:h2:file:./database/dhbw/flugbuchung
+	spring.datasource.username=SA
+
+	# Hibernate
+	spring.jpa.hibernate.ddl-auto=update
+	spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+	# H2
+	spring.h2.console.path=/h2_console
+	spring.h2.console.enabled=true
+	
+##Spring Data JPA
+	Interface AirportRepository erstellt
+		extends CrudRepository<Airport,Long> Welche Klasse, durch was identifiziert
+		
+		in diesem Interface 
+		
+##Methoden
+	get: @RequestMapping und return
+	post: @RequestMapping, @RequestBody
+	delete: @RequestMapping, @PathVariable
+
+
+
+
+
+	
+

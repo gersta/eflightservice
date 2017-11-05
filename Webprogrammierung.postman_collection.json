@@ -1,0 +1,125 @@
+{
+	"id": "1b78652c-4ccd-7909-7bfd-7573e0b1b324",
+	"name": "Webprogrammierung",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Flugbuchung",
+			"description": "",
+			"collectionId": "1b78652c-4ccd-7909-7bfd-7573e0b1b324",
+			"order": [
+				"c90f07c7-2b58-6847-7573-459f8f84f394",
+				"5de22574-ed38-09a8-f9d8-b07e098e80a3",
+				"2670677c-2706-27e5-a57d-0e060d981841"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "688c8585-2a9d-b92d-1915-3935956cbb85"
+		}
+	],
+	"folders_order": [
+		"688c8585-2a9d-b92d-1915-3935956cbb85"
+	],
+	"timestamp": 1507975261240,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "2670677c-2706-27e5-a57d-0e060d981841",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/deleteAirport/FRA",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "1b78652c-4ccd-7909-7bfd-7573e0b1b324",
+			"data": [],
+			"dataMode": "raw",
+			"name": "deleteAirport",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1507983317125,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "688c8585-2a9d-b92d-1915-3935956cbb85",
+			"rawModeData": "{\n\t\"country\": \"Southafrica\",\n\t\"shortcut\": \"JNB\",\n\t\"name\": \"Johannesburg\"\n}"
+		},
+		{
+			"id": "5de22574-ed38-09a8-f9d8-b07e098e80a3",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/addAirport",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "1b78652c-4ccd-7909-7bfd-7573e0b1b324",
+			"data": [],
+			"dataMode": "raw",
+			"name": "getAirports",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1507975309937,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "688c8585-2a9d-b92d-1915-3935956cbb85",
+			"rawModeData": "{\n\t\"username\": \"Peter\",\n\t\"password\": \"test\",\n\t\"checkPassword\": \"test\"\n}"
+		},
+		{
+			"id": "c90f07c7-2b58-6847-7573-459f8f84f394",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/getAirports",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1b78652c-4ccd-7909-7bfd-7573e0b1b324",
+			"data": [],
+			"dataMode": "raw",
+			"name": "getAirports",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1507975296268,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "688c8585-2a9d-b92d-1915-3935956cbb85",
+			"rawModeData": "{\n\t\"username\": \"Peter\",\n\t\"password\": \"test\",\n\t\"checkPassword\": \"test\"\n}"
+		}
+	]
+}
